@@ -1,1 +1,0 @@
-# single-spa-poc-persons
