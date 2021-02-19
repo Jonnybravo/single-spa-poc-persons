@@ -28,7 +28,6 @@ function PersonCard({
         {royal && <Label color="yellow">Royal</Label>}
         {killedBy && <Label color="black">Killed</Label>}
       </Card.Content>
-      <hr />
     </Card>
   );
 }

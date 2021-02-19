@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { Container, Icon, Image, Message, Label } from "semantic-ui-react";
-import { persons } from "../database/persons";
 
 function Person() {
   const { name } = useParams();
+  const persons = useSelector((state) => state.persons)
   const [person, setPerson] = useState({});
+
 
   useEffect(() => {
     let p = persons.find((person) => person.characterName === name);
